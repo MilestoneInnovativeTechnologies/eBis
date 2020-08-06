@@ -1,0 +1,14 @@
+{
+    "name": "milestone/ebis",
+    "description": "ePlus Business Intelligense Software",
+    "type": "laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Milestone Innovative Technologies",
+            "email": "info@milestoneit.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
