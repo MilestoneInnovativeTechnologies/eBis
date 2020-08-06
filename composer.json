@@ -10,5 +10,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Milestone\\eBis\\eBisServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Milestone\\eBis\\": "src/"
+        }
+    }
 }
