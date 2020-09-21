@@ -28,6 +28,9 @@ class eBisServiceProvider extends ServiceProvider
       $this->loadRoutes();
       $this->loadViews();
       $this->loadMigrations();
+      if($this->app->runningInConsole()){
+        $this->publishAssets();
+      }
     }
 
     private function loadRoutes(){
@@ -46,5 +49,11 @@ class eBisServiceProvider extends ServiceProvider
 
     private function mergeConfigs(){
       //$this->mergeConfigFrom();
+    }
+
+    private function publishAssets(){
+      $this->publishes([
+        self::path('public') => public_path('/')
+      ],'ebis');
     }
 }

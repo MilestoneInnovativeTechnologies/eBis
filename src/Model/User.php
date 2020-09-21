@@ -5,7 +5,7 @@ namespace Milestone\eBis\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Auth;
 
-class User extends \App\User
+class User extends \App\Models\User
 {
     protected $fillable = ['name', 'email', 'password', 'group'];
 
