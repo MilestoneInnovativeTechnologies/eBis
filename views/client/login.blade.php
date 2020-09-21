@@ -50,12 +50,12 @@
           <form class="form-signin" method="post">@csrf
 
             <div class="form-label-group" style="margin-bottom: 20px">
-              <input id="username" name="email" type="text" class="form-control" placeholder="Username" required autofocus value="firose@milestoneit.net">
+              <input id="username" name="email" type="text" class="form-control" placeholder="Username" required autofocus value="">
               <label for="username">Username</label>
             </div>
 
             <div class="form-label-group">
-              <input id="password" name="password" type="password" class="form-control" placeholder="Password" value="123456">
+              <input id="password" name="password" type="password" class="form-control" placeholder="Password" value="">
               <label for="password">Password</label>
             </div>
             <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Login</button>
