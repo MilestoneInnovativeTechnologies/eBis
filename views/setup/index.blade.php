@@ -56,10 +56,10 @@
                   @if(empty($data))
                     <input type="submit" value="Fetch Details" class="btnRegister">
                   @else
-                    <select class="form-control" @if(!Arr::has($data,'subscriptions')) disabled @endif onchange="((value) => { f3 = ['package','start','end','host']; value.split('|').forEach((v,i) => document.querySelector('[name='+f3[i]+']').value = v);  })(this.value)">
+                    <select class="form-control" @if(!Arr::has($data,'subscriptions')) disabled @endif onchange="((value) => { f3 = ['package','start','end','host','database','username','password']; value.split('|').forEach((v,i) => document.querySelector('[name='+f3[i]+']').value = v);  })(this.value)">
                       <option>Select Subscription/Package</option>
                       @if(\Illuminate\Support\Arr::has($data,'subscriptions')) @foreach(Arr::get($data,'subscriptions') as $subscription)
-                        <option value="{{ $subscription['package'] }}|{{ $subscription['start'] }}|{{ $subscription['end'] }}|{{ $subscription['domain'] }}">{{ $subscription['package'] }}/({{ $subscription['start'] }}/{{ $subscription['end'] }})/{{ $subscription['status'] }}</option>
+                        <option value="{{ $subscription['package'] }}|{{ $subscription['start'] }}|{{ $subscription['end'] }}|{{ $subscription['host'] }}|{{ $subscription['database'] }}|{{ $subscription['username'] }}|{{ $subscription['password'] }}">{{ $subscription['package'] }}/({{ $subscription['start'] }}/{{ $subscription['end'] }})/{{ $subscription['status'] }}</option>
                       @endforeach @endif
                     </select>
                   @endif
