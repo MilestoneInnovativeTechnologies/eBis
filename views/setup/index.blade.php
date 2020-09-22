@@ -48,7 +48,7 @@
             <div class="row register-form">
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="CODE" name="code" value=""/>
+                  <input type="text" class="form-control" placeholder="CODE" name="code" value="{{ empty($data) ? '' : $data['code'] }}"/>
                 </div>
               </div>
               <div class="col-md-6">
