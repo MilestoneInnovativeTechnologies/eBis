@@ -1,0 +1,28 @@
+{
+    "name": "milestone/ebis",
+    "description": "ePlus Business Intelligence Software",
+    "type": "laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Milestone Innovative Technologies",
+            "email": "info@milestoneit.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "staudenmeir/eloquent-json-relations": "~1.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Milestone\\eBis\\eBisServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Milestone\\eBis\\": "src/"
+        }
+    }
+}
