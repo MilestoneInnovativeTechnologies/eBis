@@ -23,11 +23,14 @@ Add an entry<br />
 `Milestone\eBis\eBisServiceProvider::class,`<br />
 to config -> app -> providers
 
-Refresh composer autoload<br />
-`composer dump-autoload`
+Import required composer packages<br />
+`composer require staudenmeir/eloquent-json-relations`
 
-Add database params in .env file<br />
-Add mail details in .env (ex: mailtrap.io)<br />
+Add a key `DOMAIN` in env file with domain as its value<br />
+`DOMAIN=ebis`
+
+Comment every route in web.php<br />
+Comment database host,database,username & password params in .env file<br />
 
 Migrate databases<br />
 `php artisan migrate`
