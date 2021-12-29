@@ -53,7 +53,7 @@ class eBisServiceProvider extends ServiceProvider
 
     private function publishAssets(){
       $this->publishes([
-        self::path('public') => public_path('/')
+        self::path('assets') => public_path('/')
       ],'ebis');
     }
 }
