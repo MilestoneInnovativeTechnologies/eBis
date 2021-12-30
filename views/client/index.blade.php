@@ -49,7 +49,7 @@
   <script src="{!! AssetController::JSAuthRoute('pages') !!}"></script>
   <script src="{!! AssetController::JSAuthRoute('widgets') !!}"></script>
   <script src="{!! AssetController::JSAuthRoute('widget') !!}"></script>
-  
+
 </head>
 <body>
   <div id="q-app"></div>
@@ -58,7 +58,7 @@ $dev = env('DEV') === '1';
 $files = json_decode(@file_get_contents(public_path('pack.json')),true);
 @endphp
 @if($dev)
-    <base href="http://portal.ebis:8080">
+    <base href="http://localhost:8080">
     <script src=vendor.js></script>
     <script src=app.js></script>
 @else
