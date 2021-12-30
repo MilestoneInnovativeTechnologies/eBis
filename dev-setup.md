@@ -57,3 +57,15 @@ once in production, remove line or make `DEV=0`<br />
 **Notes**
 1. The compiled assets are automatically copied to package assets folder as ready to deploy..
 
+**Start Using**<br />
+The main site just displays a home page only ```http://ebis/``` <br />
+Each client should have a subdomain. Ex: ```http://client1.ebis``` <br />
+Just need to create subdomains which points to same code base.<br />
+Upon visiting to such subdomain, setup screen will be displayed, where client code need to given.<br />
+_Client Code_ is the code which can be get from milestoneit.net > eBis.<br />
+Each client who required should be registered there and must have a valid subscription added.<br />
+Upon giving client code and clicking on _Fetch Details_ every subscription will be loaded from milestoneit.net..<br />
+Select the subscription from dropdown, then fill every fields, then click Register.<br />
+Every setup will be done automatically.. <br />
+For having any user to test interface, create a user in users table of client1.ebis database having password field filled with<br />
+`$2y$10$WTF3.Qf3LMAVx.pEpwHpFe1OHuWdc4byGC0d2fKSbuwnoybVCYZ/e` which is encoded string of _123456_<br />
