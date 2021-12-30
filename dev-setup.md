@@ -32,12 +32,12 @@ Add a key `DOMAIN` in env file with domain as its value<br />
 Comment every route in web.php<br />
 Comment database host,database,username & password params in .env file<br />
 
-Migrate databases<br />
-`php artisan migrate`
-
 Publish config & assets<br />
 `php artisan vendor:publish`<br />
 _(eBisServiceProvider)_
+
+Copy development required files and folders from package folder. Run in CMD
+```.\milestone\ebis\init```
 
 **Development Prerequisite**<br />
 **Quasar** in required for development.<br /><br />
@@ -46,16 +46,14 @@ Check for quasar existence<br />
 If installed, the current version will be displayed, If it hasn't installed, install using<br />
 `npm install -g @quasar/cli`
 
-Add a line to .env file for developing
-`DEV=1`<br />
+Add a line to .env file for developing `DEV=1`<br />
 once in production, remove line or make `DEV=0`<br />
 
 `npm install`
 
-`npm run watch` for development process<br />
+`npm run dev` for development process<br />
 `npm run build` for building<br />
 
 **Notes**
 1. The compiled assets are automatically copied to package assets folder as ready to deploy..
-2. While in development, the latest assets are always copied to public folder for real time experience..
 
