@@ -1,6 +1,6 @@
 {
   "name": "ebis",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "ePlus Business Intelligence Software",
   "productName": "eBis",
   "author": "Milestone Innovative Technologies <info@milestoneit.net>",
@@ -9,7 +9,7 @@
     "test": "echo \"No test specified\" && exit 0",
 	"dev": "quasar dev -m pwa",
     "build": "quasar build -m pwa && npm run pack",
-	"pack": "php .\\milestone\\ebis\\pack.php"
+    "pack": "php .\\milestone\\ebis\\pack.php"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
