@@ -2,15 +2,12 @@
 
 exec('RD /S /Q milestone\ebis\assets\css');
 exec('RD /S /Q milestone\ebis\assets\fonts');
-exec('RD /S /Q milestone\ebis\assets\icons');
 exec('RD /S /Q milestone\ebis\assets\js');
 
 exec('XCOPY "dist/pwa/js" "milestone/ebis/assets/js" /EHRYI');
 exec('XCOPY "dist/pwa/css" "milestone/ebis/assets/css" /EHRYI');
-exec('XCOPY "dist/pwa/icons" "milestone/ebis/assets/icons" /EHRYI');
 exec('XCOPY "dist/pwa/fonts" "milestone/ebis/assets/fonts" /EHRYI');
 
-exec('COPY dist\pwa\favicon.ico milestone\ebis\assets\favicon.ico /Y');
 exec('COPY dist\pwa\*.js* milestone\ebis\assets /Y');
 
 $json = [];
